@@ -1,0 +1,81 @@
+.nav {
+  padding: 10px;
+}
+.nav ul {
+  overflow: hidden;
+}
+.nav ul li > a {
+  width: 33.33%;
+  float: left;
+}
+.nav ul li > a img {
+  width: 100%;
+  display: block;
+}
+.brand {
+  padding: 0 10px;
+}
+.brand > img {
+  width: 100%;
+}
+.brand ul {
+  padding: 10px 0;
+  overflow: hidden;
+}
+.brand ul li a {
+  width: 25%;
+  float: left;
+}
+.brand ul li a img {
+  width: 100%;
+  display: block;
+}
+.sports {
+  padding: 0 10px 10px;
+}
+.sports > img {
+  width: 100%;
+}
+.sports > ul {
+  overflow: hidden;
+}
+.sports > ul li {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.sports > ul li a {
+  text-align: center;
+  display: block;
+  padding: 5px;
+  box-shadow: 0 0 5px #ccc;
+}
+.sports > ul li a img {
+  width: 100%;
+}
+.sports > ul li a span {
+  font-size: 14px;
+}
+.sports > ul li a .sports-name {
+  display: inline-block;
+  color: #8f8f94;
+  padding-bottom: 10px;
+}
+.sports > ul li a .sports-now {
+  color: #f20;
+}
+.sports > ul li a .sports-before {
+  text-decoration: line-through;
+  color: #8f8f94;
+}
+.sports > ul li a .sports-buy {
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #006699;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10px;
+}
