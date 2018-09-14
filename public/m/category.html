@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="css/category.css"/>
     <script src="assets/mui/js/mui.min.js"></script>
     <script src="assets/zepto/zepto.min.js"></script>
+    <script src="./assets/artTemplate/template-web.js"></script>
     <script src="js/category.js"></script>
 </head>
 <body>
 <header class="mui-bar mui-bar-nav my-header">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
     <h1 class="mui-title">网页标题</h1>
     <a class="mui-icon mui-icon-search mui-pull-right"></a>
 </header>
@@ -39,173 +41,46 @@
     <div class="content-left">
         <div class="mui-scroll-wrapper">
             <div class="mui-scroll">
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
-               111 <br/>
+              <div class="content-first">
+                <!--一级分类-->
+              </div>
             </div>
         </div>
     </div>
     <div class="content-right">
         <div class="mui-scroll-wrapper">
             <div class="mui-scroll">
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
-                111 <br/>
+               <ul class="items-second mui-clearfix">
+                   <!--<li>-->
+                       <!--<a href="#">-->
+                           <!--<img src="./images/brand1.png" alt=""/>-->
+                           <!--<span>耐克</span>-->
+                       <!--</a>-->
+                   <!--</li>-->
+               </ul>
             </div>
         </div>
     </div>
 </div>
+<script type="text/html" id="first-tmp">
+    {{each rows}}
+        <a href="#" class="items-first" data-id="{{$value.id}}">{{$value.categoryName}}</a>
+    {{/each}}
+</script>
+
+<script type="text/html" id="second-tmp">
+    {{each rows}}
+        <li>
+            <a href="#">
+                <img src="{{$value.brandLogo}}" alt=""/>
+                <span>{{$value.brandName}}</span>
+            </a>
+        </li>
+    {{/each}}
+
+    {{if rows.length==0}}
+        <div class="noData">暂无数据</div>
+    {{/if}}
+</script>
 </body>
 </html>

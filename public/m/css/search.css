@@ -1,0 +1,43 @@
+body,
+.mui-content {
+  background: #fff;
+}
+.myContainer {
+  padding: 10px;
+}
+.myContainer .my-search {
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.myContainer .my-search input:first-child {
+  height: 30px;
+  width: 100%;
+  padding-right: 70px;
+  font-size: 14px;
+  border: 1px solid #006699;
+  border-radius: 0;
+}
+.myContainer .my-search input:last-child {
+  height: 30px;
+  width: 60px;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #006699;
+  color: #fff;
+  border-radius: 0;
+  border: none;
+}
+.myContainer .history {
+  font-size: 14px;
+  color: #8f8f94;
+  line-height: 24px;
+  padding-bottom: 15px;
+}
+.myContainer .history .mui-icon {
+  font-size: 14px;
+  line-height: normal;
+}

@@ -10,10 +10,53 @@
   width: 80px;
   float: left;
   position: relative;
-  background-color: pink;
+  background-color: #f5f5f5;
+}
+.my-content .content-left .content-first {
+  background-color: #fff;
+}
+.my-content .content-left .content-first .items-first {
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 14px;
+  color: #0f0f0f;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+.my-content .content-left .content-first .items-first.active {
+  background-color: #f5f5f5;
+  border-right: none;
 }
 .my-content .content-right {
   height: 100%;
   margin-left: 90px;
   position: relative;
+  margin-top: 10px;
+}
+.my-content .content-right .items-second li {
+  float: left;
+  width: 33.33%;
+}
+.my-content .content-right .items-second li a {
+  display: block;
+  background-color: #fff;
+}
+.my-content .content-right .items-second li a img {
+  width: 100%;
+  display: block;
+}
+.my-content .content-right .items-second li a span {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #8f8f94;
+}
+.my-content .content-right .items-second .noData {
+  height: 30px;
+  line-height: 30px;
+  background-color: #fff;
+  font-size: 14px;
+  padding-left: 15px;
 }

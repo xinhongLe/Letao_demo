@@ -1,0 +1,62 @@
+body,
+.mui-content {
+  background-color: #fff;
+}
+.my-content .filter {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+.my-content .filter div {
+  background-color: #efeff4;
+  padding: 5px;
+}
+.sports {
+  padding: 0 10px 10px;
+}
+.sports > img {
+  width: 100%;
+}
+.sports > ul {
+  overflow: hidden;
+}
+.sports > ul li {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.sports > ul li a {
+  text-align: center;
+  display: block;
+  padding: 5px;
+  box-shadow: 0 0 5px #ccc;
+}
+.sports > ul li a img {
+  width: 100%;
+}
+.sports > ul li a span {
+  font-size: 14px;
+}
+.sports > ul li a .sports-name {
+  display: inline-block;
+  color: #8f8f94;
+  padding-bottom: 10px;
+}
+.sports > ul li a .sports-now {
+  color: #f20;
+}
+.sports > ul li a .sports-before {
+  text-decoration: line-through;
+  color: #8f8f94;
+}
+.sports > ul li a .sports-buy {
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #006699;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10px;
+}
